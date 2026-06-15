@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung – BIMPruef</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0A0C10;
+  --paper:#F5F3EE;
+  --steel:#1A2B3C;
+  --accent:#1754B8;
+  --muted:#6B7280;
+  --border:#D8D3CA;
+  --white:#FFFFFF;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 48px;
+  background:rgba(245,243,238,0.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Syne',sans-serif;font-weight:800;font-size:18px;
+  letter-spacing:-0.5px;color:var(--ink);text-decoration:none;
+}
+.nav-logo-mark{
+  width:30px;height:30px;background:var(--accent);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  color:white;font-size:12px;font-weight:800;
+}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-size:14px;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  background:var(--accent);color:white;padding:9px 22px;
+  border-radius:8px;font-size:14px;font-weight:500;
+  text-decoration:none;transition:background .2s;
+}
+.nav-cta:hover{background:#3A7CFF}
+
+.content{max-width:760px;margin:0 auto;padding:120px 48px 80px}
+
+.back-link{
+  display:inline-flex;align-items:center;gap:6px;
+  color:var(--accent);text-decoration:none;
+  font-size:14px;font-weight:500;margin-bottom:32px;
+  transition:opacity .2s;
+}
+.back-link:hover{opacity:.75}
+
+h1{
+  font-family:'Syne',sans-serif;font-size:clamp(32px,5vw,48px);
+  font-weight:800;letter-spacing:-1.5px;line-height:1.08;
+  margin-bottom:12px;color:var(--ink);
+}
+.intro{font-size:16px;color:var(--muted);margin-bottom:48px;line-height:1.75}
+
+.box{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:12px;padding:28px 32px;margin-bottom:16px;
+}
+.box h3{
+  font-family:'Syne',sans-serif;font-size:17px;font-weight:700;
+  margin-bottom:14px;color:var(--ink);
+}
+.box p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:10px}
+.box p:last-child{margin-bottom:0}
+.box ul{
+  font-size:15px;color:var(--muted);line-height:1.75;
+  padding-left:20px;margin-top:8px;
+}
+.box ul li{margin-bottom:6px}
+.box a{color:var(--accent);text-decoration:none}
+.box a:hover{text-decoration:underline}
+.box strong{color:var(--ink);font-weight:600}
+
+.stand{font-size:13px;color:var(--muted);margin-top:32px}
+
+footer{
+  background:var(--steel);color:rgba(255,255,255,0.5);
+  padding:48px 48px 32px;text-align:center;
+}
+.footer-logo{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:18px;
+  color:white;margin-bottom:10px;display:block;letter-spacing:-0.5px;
+}
+footer p{font-size:13px;line-height:1.7;max-width:400px;margin:0 auto 28px}
+.footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.footer-links a{
+  font-size:13px;color:rgba(255,255,255,0.45);
+  text-decoration:none;transition:color .2s;
+}
+.footer-links a:hover{color:white}
+.footer-copy{
+  font-size:12px;border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:20px;color:rgba(255,255,255,0.25);
+}
+
+@media(max-width:768px){
+  nav{padding:16px 24px}
+  .nav-links{display:none}
+  .content{padding:100px 24px 60px}
+  .box{padding:20px 20px}
+  footer{padding:40px 24px 28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark">BP</div>
+    BIMPruef
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/impressum.html">Impressum</a>
+    <a href="https://my.bimpruef.com/auth/login">Sign in</a>
+    <a href="https://my.bimpruef.com/auth/signup" class="nav-cta">Start free</a>
+  </div>
+</nav>
+
+<div class="content">
+
+  <a href="/" class="back-link">← Zurück zur Startseite</a>
+
+  <h1>Datenschutzerklärung</h1>
+  <p class="intro">Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.</p>
+
+  <div class="box">
+    <h3>1. Verantwortlicher</h3>
+    <p><strong>Foad Amini</strong><br>
+    BIMPruef Platform<br>
+    E-Mail: <a href="mailto:amini.foad@gmail.com">amini.foad@gmail.com</a></p>
+  </div>
+
+  <div class="box">
+    <h3>2. Zwecke und Rechtsgrundlagen der Verarbeitung</h3>
+    <p>Wir verarbeiten personenbezogene Daten, soweit dies für den Betrieb der Plattform,
+    die Bereitstellung der Upload- und Analysefunktionen sowie zur IT-Sicherheit erforderlich ist.</p>
+    <ul>
+      <li><strong>Bereitstellung des Dienstes</strong> (Art. 6 Abs. 1 lit. b DSGVO)</li>
+      <li><strong>Betriebssicherheit, Missbrauchserkennung und Fehleranalyse</strong> (Art. 6 Abs. 1 lit. f DSGVO)</li>
+      <li><strong>Erfüllung gesetzlicher Pflichten</strong> (Art. 6 Abs. 1 lit. c DSGVO), soweit anwendbar</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>3. Verarbeitete Datenkategorien</h3>
+    <ul>
+      <li><strong>Nutzungsdaten:</strong> Datum/Uhrzeit, aufgerufene Endpunkte, technische Metadaten</li>
+      <li><strong>Upload-Daten:</strong> hochgeladene IFC-Dateien (.ifc, .ifczip), Dateinamen</li>
+      <li><strong>Kommunikationsdaten:</strong> Inhalte von Kontaktanfragen per E-Mail</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>4. Speicherdauer</h3>
+    <p>Hochgeladene IFC-Dateien und zugehörige Session-Daten werden grundsätzlich nur temporär
+    gespeichert und spätestens nach 24 Stunden automatisiert gelöscht.
+    Länger gespeicherte Daten entstehen nur, wenn dies technisch notwendig oder rechtlich
+    vorgeschrieben ist.</p>
+  </div>
+
+  <div class="box">
+    <h3>5. Empfänger und Auftragsverarbeiter</h3>
+    <p>Ein Zugriff auf Daten erfolgt nur, soweit dies für den technischen Betrieb erforderlich ist.
+    Sofern externe Hosting- oder Infrastruktur-Dienstleister eingesetzt werden, erfolgt dies auf
+    Grundlage eines Auftragsverarbeitungsvertrages nach Art. 28 DSGVO.</p>
+  </div>
+
+  <div class="box">
+    <h3>6. Drittlandübermittlungen</h3>
+    <p>Sofern Daten außerhalb der EU/des EWR verarbeitet werden, erfolgt dies nur unter Einhaltung
+    der Voraussetzungen der Art. 44 ff. DSGVO (z. B. Angemessenheitsbeschluss oder geeignete
+    Garantien wie EU-Standardvertragsklauseln).</p>
+  </div>
+
+  <div class="box">
+    <h3>7. Ihre Rechte</h3>
+    <p>Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+    <ul>
+      <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+      <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+      <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+      <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Recht auf Widerspruch gegen bestimmte Verarbeitungen (Art. 21 DSGVO)</li>
+      <li>Recht auf Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+      <li>Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde (Art. 77 DSGVO)</li>
+    </ul>
+    <p>Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:
+    <a href="mailto:amini.foad@gmail.com">amini.foad@gmail.com</a></p>
+  </div>
+
+  <div class="box">
+    <h3>8. Bereitstellungspflicht</h3>
+    <p>Die Bereitstellung bestimmter Daten ist für die Nutzung der Plattform technisch erforderlich.
+    Ohne diese Daten können zentrale Funktionen (z. B. Datei-Upload und Modellvergleich) nicht
+    bereitgestellt werden.</p>
+  </div>
+
+  <div class="box">
+    <h3>9. Automatisierte Entscheidungsfindung</h3>
+    <p>Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO
+    findet nicht statt.</p>
+  </div>
+
+  <div class="box">
+    <h3>10. Änderungen dieser Datenschutzerklärung</h3>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich rechtliche,
+    technische oder organisatorische Rahmenbedingungen ändern. Die jeweils aktuelle Fassung
+    ist stets auf dieser Seite abrufbar.</p>
+  </div>
+
+  <p class="stand">Stand: 22. April 2026</p>
+
+</div>
+
+<footer>
+  <span class="footer-logo">BIMPruef</span>
+  <p>A cloud-based BIM verification platform for architects, engineers, and BIM coordinators.</p>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/impressum.html">Impressum</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+    <a href="https://my.bimpruef.com/auth/signup">Sign up free</a>
+    <a href="https://my.bimpruef.com/auth/login">Sign in</a>
+  </div>
+  <div class="footer-copy">© 2026 BIMPruef · Foad Amini Ghahfarokhi · All rights reserved.</div>
+</footer>
+
+</body>
+</html>
