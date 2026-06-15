@@ -5,84 +5,145 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Impressum – BIMPruef</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
 :root{
   --ink:#0A0C10;
   --paper:#F5F3EE;
-  --steel:#1A2B3C;
+  --surface:#FFFFFF;
+  --navy:#111827;
   --accent:#1754B8;
-  --accent-light:#3A7CFF;
-  --muted:#6B7280;
-  --border:#D8D3CA;
-  --white:#FFFFFF;
+  --accent-h:#2563EB;
+  --muted:#52606D;
+  --muted-light:#8896A5;
+  --border:rgba(10,12,16,.10);
+  --border-mid:rgba(10,12,16,.18);
+  --border-strong:rgba(10,12,16,.28);
+  --r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:18px;
 }
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;line-height:1.7}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(245,243,238,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-weight:800;font-size:18px;letter-spacing:-0.5px;color:var(--ink);text-decoration:none}
-.nav-logo-mark{width:30px;height:30px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-size:12px;font-weight:800}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-size:14px;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{background:var(--accent);color:white;padding:9px 22px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;transition:background .2s}
-.nav-cta:hover{background:var(--accent-light)}
+/* Nav */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:200;
+  height:56px;display:flex;align-items:center;padding:0 48px;
+  background:rgba(245,243,238,.94);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+.nav__inner{display:flex;align-items:center;width:100%;max-width:1280px;margin:0 auto}
+.nav__logo{
+  display:flex;align-items:center;gap:9px;
+  font-family:'Syne',sans-serif;font-weight:800;font-size:17px;letter-spacing:-.5px;
+  color:var(--ink);text-decoration:none;
+}
+.nav__mark{
+  width:28px;height:28px;background:var(--accent);border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;color:#fff;letter-spacing:0;
+}
+.nav__links{display:flex;align-items:center;gap:2px;margin-left:40px;flex:1}
+.nav__link{
+  font-size:13.5px;font-weight:500;color:var(--muted);
+  padding:6px 12px;border-radius:var(--r-sm);
+  transition:color .15s,background .15s;text-decoration:none;
+}
+.nav__link:hover{color:var(--ink);background:rgba(10,12,16,.04);text-decoration:none}
+.nav__cta{
+  font-size:13.5px;font-weight:500;color:#fff;
+  background:var(--accent);padding:7px 18px;border-radius:var(--r-md);
+  text-decoration:none;transition:background .15s;
+}
+.nav__cta:hover{background:var(--accent-h);text-decoration:none}
 
-.content{max-width:760px;margin:0 auto;padding:120px 48px 80px}
+/* Content */
+.content{max-width:720px;margin:0 auto;padding:96px 48px 80px}
 
-.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--accent);text-decoration:none;font-size:14px;font-weight:500;margin-bottom:32px;transition:opacity .2s}
-.back-link:hover{opacity:.75}
+.back{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13.5px;font-weight:500;color:var(--accent);
+  margin-bottom:36px;transition:opacity .15s;
+}
+.back:hover{opacity:.7;text-decoration:none}
+.back svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 
-h1{font-family:'Syne',sans-serif;font-size:clamp(32px,5vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.08;margin-bottom:12px;color:var(--ink)}
-.intro{font-size:16px;color:var(--muted);margin-bottom:48px;line-height:1.75}
+h1{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(30px,5vw,48px);
+  font-weight:800;letter-spacing:-1.5px;line-height:1.06;
+  color:var(--ink);margin-bottom:10px;
+}
+.intro{font-size:15.5px;color:var(--muted);margin-bottom:44px;line-height:1.7}
 
-.box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px 32px;margin-bottom:16px}
-.box h3{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:14px;color:var(--ink)}
-.box p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:10px}
+/* Cards */
+.box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-xl);
+  padding:28px 32px;
+  margin-bottom:12px;
+}
+.box h3{
+  font-family:'Syne',sans-serif;
+  font-size:15px;font-weight:700;
+  color:var(--ink);margin-bottom:12px;
+}
+.box p{font-size:14.5px;color:var(--muted);line-height:1.75;margin-bottom:8px}
 .box p:last-child{margin-bottom:0}
-.box a{color:var(--accent);text-decoration:none}
-.box a:hover{text-decoration:underline}
-.box strong{color:var(--ink);font-weight:600}
+.box strong{color:var(--ink);font-weight:500}
 
-.stand{font-size:13px;color:var(--muted);margin-top:32px}
+.stand{font-size:12.5px;color:var(--muted-light);margin-top:28px}
 
-footer{background:var(--ink);color:rgba(255,255,255,0.5);padding:60px 48px 40px;text-align:center}
-.footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:white;margin-bottom:12px;display:block;letter-spacing:-0.5px}
-footer p{font-size:13px;line-height:1.7;max-width:400px;margin:0 auto 32px}
-.footer-links{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
-.footer-links a{font-size:13px;color:rgba(255,255,255,0.4);text-decoration:none;transition:color .2s}
-.footer-links a:hover{color:white}
-.footer-copy{font-size:12px;border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;color:rgba(255,255,255,0.25)}
+/* Footer */
+footer{
+  background:var(--ink);color:rgba(255,255,255,.4);
+  padding:56px 48px 36px;text-align:center;
+}
+.footer__logo{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:18px;
+  color:#fff;display:block;margin-bottom:10px;letter-spacing:-.4px;
+}
+footer p{font-size:13px;line-height:1.7;max-width:380px;margin:0 auto 28px}
+.footer__links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.footer__links a{font-size:13px;color:rgba(255,255,255,.35);text-decoration:none;transition:color .15s}
+.footer__links a:hover{color:#fff}
+.footer__copy{font-size:11.5px;border-top:1px solid rgba(255,255,255,.07);padding-top:20px;color:rgba(255,255,255,.2)}
 
-@media(max-width:900px){
-  nav{padding:16px 24px}
-  .nav-links{display:none}
-  .content{padding:100px 24px 60px}
-  .box{padding:20px 20px}
-  footer{padding:48px 24px 32px}
+@media(max-width:768px){
+  .nav{padding:0 20px}
+  .nav__links,.nav__cta{display:none}
+  .content{padding:80px 24px 60px}
+  .box{padding:20px 22px}
+  footer{padding:44px 24px 28px}
 }
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <div class="nav-logo-mark">BP</div>
-    BIMPruef
-  </a>
-  <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/datenschutz.html">Datenschutz</a>
-    <a href="https://my.bimpruef.com/auth/login">Sign in</a>
-    <a href="https://my.bimpruef.com/auth/signup" class="nav-cta">Start free</a>
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">
+      <div class="nav__mark">BP</div>
+      BIMPruef
+    </a>
+    <div class="nav__links">
+      <a href="/" class="nav__link">Home</a>
+      <a href="/datenschutz.html" class="nav__link">Datenschutz</a>
+      <a href="https://my.bimpruef.com/auth/login" class="nav__link">Sign in</a>
+    </div>
+    <a href="https://my.bimpruef.com/auth/signup" class="nav__cta" style="margin-left:auto">Start free</a>
   </div>
 </nav>
 
 <div class="content">
 
-  <a href="/" class="back-link">← Zurück zur Startseite</a>
+  <a href="/" class="back">
+    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Zurück zur Startseite
+  </a>
 
   <h1>Impressum</h1>
   <p class="intro">Anbieterkennzeichnung gemäß § 5 DDG.</p>
@@ -103,35 +164,22 @@ footer p{font-size:13px;line-height:1.7;max-width:400px;margin:0 auto 32px}
 
   <div class="box">
     <h3>Kontakt</h3>
-    <p>Bei Fragen zu dieser Website oder den bereitgestellten Diensten kontaktieren Sie uns bitte
-    per E-Mail unter <a href="mailto:amini.foad@gmail.com">amini.foad@gmail.com</a>.
-    Ihre Anfrage wird schnellstmöglich bearbeitet.</p>
+    <p>Bei Fragen zu dieser Website oder den bereitgestellten Diensten kontaktieren Sie uns bitte per E-Mail unter <a href="mailto:amini.foad@gmail.com">amini.foad@gmail.com</a>. Ihre Anfrage wird schnellstmöglich bearbeitet.</p>
   </div>
 
   <div class="box">
     <h3>Haftung für Inhalte</h3>
-    <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit,
-    Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
-    Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach
-    den allgemeinen Gesetzen verantwortlich.</p>
+    <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
   </div>
 
   <div class="box">
     <h3>Haftung für Links</h3>
-    <p>Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte wir
-    keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
-    oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
-    Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt
-    der Verlinkung nicht erkennbar.</p>
+    <p>Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
   </div>
 
   <div class="box">
     <h3>Urheberrecht</h3>
-    <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
-    dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-    Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung
-    des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den
-    privaten, nicht kommerziellen Gebrauch gestattet.</p>
+    <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
   </div>
 
   <p class="stand">Stand: 22. April 2026</p>
@@ -139,15 +187,16 @@ footer p{font-size:13px;line-height:1.7;max-width:400px;margin:0 auto 32px}
 </div>
 
 <footer>
-  <span class="footer-logo">BIMPruef</span>
-  <p>A cloud-based BIM verification platform for architects, engineers, and BIM coordinators. Built with ifcopenshell, FastAPI, and Cloudflare R2.</p>
-  <div class="footer-links">
+  <span class="footer__logo">BIMPruef</span>
+  <p>A cloud-based BIM verification platform for architects, engineers, and BIM coordinators.</p>
+  <div class="footer__links">
+    <a href="/">Home</a>
+    <a href="/impressum.html">Impressum</a>
+    <a href="/datenschutz.html">Datenschutz</a>
     <a href="https://my.bimpruef.com/auth/signup">Sign up free</a>
     <a href="https://my.bimpruef.com/auth/login">Sign in</a>
-    <a href="/impressum.html">Imprint</a>
-    <a href="/datenschutz.html">Privacy</a>
   </div>
-  <div class="footer-copy">© 2026 BIMPruef · Foad Amini Ghahfarokhi · All rights reserved.</div>
+  <div class="footer__copy">© 2026 BIMPruef · Foad Amini Ghahfarokhi · All rights reserved.</div>
 </footer>
 
 </body>
